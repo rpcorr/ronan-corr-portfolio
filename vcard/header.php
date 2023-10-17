@@ -3,6 +3,7 @@
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->	<html <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
+<?php include_once 'GATagManager.php'; ?>
 <?php $vc_options = get_option('vcard_theme'); ?>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -42,9 +43,9 @@
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 <?php  wp_head(); ?>
 </head>
-<body <?php body_class();?>>   
+<body <?php body_class();?>>
 <!--Google Analytics Tag Manager-->
-<?php include_once("GATagManager.php"); ?>
+<?php include_once("GATagManager-no-script.php"); ?>
 
 <!-- LOADING MASK -->
 <?php if ($vc_options['cube_loader']=="yes") {
