@@ -46,11 +46,5 @@
 <!-- MAIN CONTENT -->
 
 <?php wp_footer();?>
-
-<!--Google Analytics Tag Manager-->
-<?php include_once("GATagManager.php"); ?>
-
-<!--Google Analytics Tracking Tag-->
-<?php include_once("analyticstracking.php"); ?>
 </body>
 </html>
